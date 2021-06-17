@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  user-select: none;
+}
+
+html {
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 26%,
+    rgba(1, 72, 110, 1) 61%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.previsao {
+  /* border: 1px solid gray; */
+  border-radius: 30px;
+  overflow: auto;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 7px 7px 5px 0px rgba(50, 44, 50, 0.41);
+}
+
+.previsao header {
+  /* border-radius: 30px; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  /* border-bottom: 2px solid black; */
+  background-color: #0080cd;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+}
+
+.previsao header h4 {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+.previsao div {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+.previsao div ul {
+  list-style: none;
+}
+.previsao div ul li {
+  margin: 1.5rem 0;
+}
+
+form {
+  width: 50%;
+  margin: 5% auto;
+  font-size: 1.6rem;
+  overflow: visible;
+  display: flex;
+  justify-content: space-between;
+}
+form h3 {
+  /* display: flex; */
+  text-align: center;
+}
+form input {
+  width: 80%;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 7px 7px 5px 0px rgba(40, 42, 50, 0.17);
+  border: 0.8px solid silver;
+  padding: 0.6rem;
+  /* outline: 0.8px solid red; */
+}
+
+form button {
+  width: 8rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline: 0;
+  border: 0;
+  background-color: green;
+  color: #f2f2f2;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+form input:focus {
+  box-shadow: 7px 7px 5px 0px rgba(40, 42, 50, 0.17);
+  outline: 0;
+  border-radius: 5px;
+}
+::-webkit-input-placeholder {
+  color: #1a2a87;
+  padding: 1rem;
+}
+
+@media (max-width: 800px) {
+  .previsao {
+    width: 80%;
+    margin: 15% auto;
+    height: 40vh;
+  }
+
+  .previsao header h4 {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  form {
+    width: 80%;
+    margin: 15% auto;
+  }
+}

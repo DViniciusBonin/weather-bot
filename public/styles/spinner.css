@@ -1,0 +1,26 @@
+.loading-inactive {
+  display: none;
+}
+.loading {
+  /* align-items: center; */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  transform: scale(5);
+}
+
+.c-loader {
+  margin-top: 2rem;
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #51d4db;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}

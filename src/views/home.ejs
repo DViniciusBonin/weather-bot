@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web scraping</title>
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/spinner.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">Previsão do Tempo</nav>
+    </header>
+
+    <main>
+      <form action="/submit" method="POST">
+        <!-- <h3>Busque por uma cidade</h3> -->
+        <input type="text" placeholder="Informe a cidade..." name="city" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- <div class="loading-inactive" id="loading">
+        <div class="c-loader"></div>
+      </div> -->
+    </main>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
