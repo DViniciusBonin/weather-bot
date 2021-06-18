@@ -7,6 +7,16 @@
 
 html {
   background-color: #f2f2f2;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+main {
+  height: 70%;
 }
 
 .navbar {
@@ -111,6 +121,14 @@ form input:focus {
   padding: 1rem;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  padding: 2rem;
+}
 @media (max-width: 800px) {
   .previsao {
     width: 80%;
