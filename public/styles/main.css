@@ -129,6 +129,11 @@ footer {
 footer div {
   padding: 2rem;
 }
+
+span {
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 800px) {
   .previsao {
     width: 80%;
