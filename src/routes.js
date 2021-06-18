@@ -5,7 +5,7 @@ const router = express.Router();
 const homeController = new HomeController();
 
 router.get('/', (req, res) => {
-    res.render('home')
+    res.render('home.html')
 })
 
 router.post('/submit', homeController.submit)

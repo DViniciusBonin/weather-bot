@@ -1,3 +1,4 @@
+const { response } = require('express')
 const temperature = require('../services/temperature-bot')
 
 class HomeController {
@@ -6,8 +7,9 @@ class HomeController {
 
         const result = await temperature(city)
         result.city = city
-        console.log(result)
-        res.render('temperatura', result)
+        // console.log(result)
+        // res.render('temperatura', result)
+        return res.status(200).json(result)
     }
 }
 

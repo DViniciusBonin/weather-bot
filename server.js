@@ -7,8 +7,8 @@ const server = express();
 
 const port = process.env.PORT || 7000
 
-
-server.set('view engine', 'ejs');
+server.engine("html", require("ejs").renderFile)
+server.set('view engine', 'html');
 server.set('views', './src/views')
 server.use(express.static('public'));
 server.use(bodyParser.json());

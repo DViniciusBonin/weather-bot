@@ -1,10 +1,7 @@
-.loading-inactive {
-  display: none;
-}
 .loading {
   /* align-items: center; */
   margin-top: 2rem;
-  display: flex;
+  display: none;
   justify-content: center;
   transform: scale(5);
 }

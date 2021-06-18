@@ -14,17 +14,32 @@
     </header>
 
     <main>
-      <form action="/submit" method="POST">
+      <form>
         <!-- <h3>Busque por uma cidade</h3> -->
         <input type="text" placeholder="Informe a cidade..." name="city" />
-        <button type="submit">Buscar</button>
+        <button type="button">Buscar</button>
       </form>
 
-      <!-- <div class="loading-inactive" id="loading">
+      <div class="loading" id="loading">
         <div class="c-loader"></div>
-      </div> -->
+      </div>
+
+      <section class="previsao">
+        <header>
+          <h4>Previsão de hoje</h4>
+          <h4></h4>
+        </header>
+
+        <div>
+          <ul>
+            <li>Temperatura:</li>
+            <li>Probabilidade de chuva:</li>
+            <li>Nascer e pôr do Sol:</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <script src="/scripts/script.js"></script>
+    <script src="/scripts/submit.js"></script>
   </body>
 </html>
